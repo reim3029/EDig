@@ -1,0 +1,182 @@
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+
+a{
+    text-decoration:none;
+}
+#wrap{
+    width:100%;
+}
+
+#header{
+    width:1200px;
+    height:100px;
+    margin:0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+}
+
+.nav_item {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_item li {
+    padding: 8px 12px;
+}
+  
+  .nav_item li:hover {
+    border-radius: 4px;
+}
+
+.carousel {
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+}
+
+.carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
+    );
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+
+      div [class^="col-"]{
+        padding-left:5px;
+        padding-right:5px;
+      }
+      .card{
+        transition:0.5s;
+        cursor:pointer;
+      }
+      .card-title{  
+        font-size:15px;
+        transition:1s;
+        cursor:pointer;
+        text-align: center;
+      }
+        
+      .card:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      }
+
+      .card-text{
+        height:80px;  
+        text-align: center;
+      }
+      
+      .card::before, .card::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scale3d(0, 0, 1);
+        transition: transform .3s ease-out 0s;
+        background: rgba(255, 255, 255, 0.1);
+        content: '';
+        pointer-events: none;
+      }
+      .card::before {
+        transform-origin: left top;
+      }
+      .card::after {
+        transform-origin: right bottom;
+      }
+      .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+        transform: scale3d(1, 1, 1);
+      }
+
+
+.youtube-home {
+    float: left;
+    margin-right: 50px;
+}
+
+.community-preview {
+    display: inline-block;
+}
+
+
+
+#wait {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/element5-digital-OyCl7Y4y0Bk-unsplash_.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+html, body {
+  height: 100%
+}
+
+#wrap {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* 소개 */
+#about-header {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(images/evangeline-shaw-VLkoOabAxqw-unsplash.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#about-problem {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+#about-problem::after {
+  width: 100%;
+  height: 60%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: url(images/5570863.jpg)
+}
